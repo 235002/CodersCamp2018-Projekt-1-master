@@ -1,0 +1,53 @@
+body {
+  height: 500vh;
+}
+
+section {
+  width: 100%;
+  display: table;
+  max-width: none;
+  height: 100vh;
+}
+
+.content {
+  display: table-cell;
+}
+
+#navigation {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  left: 0%;
+  top: 90%;
+}
+
+.button {
+  width: 150px;
+  height: 20px;
+  border: none;
+  padding: 10px;
+  font-size: 15px;
+  transform: skewX(-45deg);
+  background-color: #71726b56;
+  padding: 2px 0 2px 0;
+  margin: 0 10px;
+}
+
+.button:active {
+  border: none;
+}
+
+.button:hover {
+  width: 150px;
+  height: 20px;
+  border: 2px solid #a5a59a;
+}
+
+.option {
+  transform: skewX(45deg);
+  color: white;
+  font-style: normal;
+  text-align: center;
+  padding-bottom: 8px;
+}

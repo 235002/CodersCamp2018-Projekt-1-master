@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf=8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="styleNav.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style1.css" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style3.css" type="text/css" />
+    <link rel="stylesheet" href="style6.css" type="text/css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merienda:400,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <section>
+        <div class="content">
+          <div class="wrapper">
+            <div class="background">
+              <div class="middle-box">
+                <h1>Jakub Pawłowski</h1>
+                <p>
+                  Back-end Developer &nbsp;&bull;&nbsp; Graphic Designer
+                  &nbsp;&bull;&nbsp; Geek
+                </p>
+                <div class="social">
+                  <div class="social-item">
+                    <a href="https://www.facebook.com" class="fab fa-facebook-f" target="_blank"></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="https://twitter.com/" class="fab fa-twitter" target="_blank"></a>
+                  </div>
+                  <div class="social-item">
+                    <a href="https://github.com/235002" class="fab fa-github" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="content">
+          <div class="aboutMe-container">
+            <section class="aboutMe-origin">
+              <h1>Origin</h1>
+              <p>
+			  I'm studing Computer Science on Wroclaw University of Science and Technology.
+			  I'm on second year. I'm Webdesigner and this is my business card page.
+              </p>
+            </section>
+            <section class="aboutMe-name">
+              <h1>Name</h1>
+              <img src="images/icon.svg" />
+              <p>
+                My name is Jakub Pawłowski.  
+				I'm intrested in travelling, sailing and snowboarding.
+              </p>
+            </section>
+            <section class="aboutMe-skills">
+              <h1>Skills</h1>
+				<p>
+                I know the following technologies: C/C++, Java, 
+				PHP7, SQL, HTML5, CSS, JavaScript, Python 
+				VHDL, npm, Webpack, Node.js, git.
+				</p>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="content">3. Miejsce do wstawienia danych Offer</div>
+      </section>
+      <section>
+        <div class="content">
+          <div class="outer-picture-container">
+            <div class="picture-container">
+              <div class="outer-picture-box">
+                <a href="content/photos/img1.jpg">
+                  <div class="picture-box box1"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img2.jpg">
+                  <div class="picture-box box2"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img3.jpg">
+                  <div class="picture-box box3"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img4.jpg">
+                  <div class="picture-box box4"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img5.jpg">
+                  <div class="picture-box box5"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img6.jpg">
+                  <div class="picture-box box6"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img7.jpg">
+                  <div class="picture-box box7"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img8.jpg">
+                  <div class="picture-box box8"></div>
+                </a>
+              </div>
+              <div class="outer-picture-box">
+                <a href="content/photos/img9.jpg">
+                  <div class="picture-box box9"></div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="content">
+          <div id="kontakt">
+            <div class="tytul">Contact with me!</div>
+
+            <div id="cz1" class="czesc">phone: 123456789</div>
+            <div id="cz2" class="czesc">e-mail: name.surname@gmail.com</div>
+
+            <div id="cz3" class="czesc">
+              <a href="https://www.instagram.com/" target="_blank">
+                <img
+                  src="image/insta.png"
+                  alt="instagram"
+                  width="80px"
+                  height="80px"
+                />
+              </a>
+              <a href="https://github.com/235002" target="_blank">
+                <img
+                  src="image/git.png"
+                  alt="github"
+                  width="80px"
+                  height="80px"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div id="navigation">
+      <button class="button"><div class="option">Start</div></button>
+      <button class="button"><div class="option">About</div></button>
+      <button class="button"><div class="option">Offer</div></button>
+      <button class="button"><div class="option">Gallery</div></button>
+      <button class="button"><div class="option">Contact</div></button>
+    </div>
+
+    <script src="jquery-1.11.3.min.js"></script>
+    <script>
+      const btns = document.querySelectorAll(".button");
+      const sections = document.querySelectorAll(".content");
+
+      btns[0].addEventListener("click", () => {
+        scrollIt(sections[0]);
+      });
+
+      btns[1].addEventListener("click", () => {
+        scrollIt(sections[1]);
+      });
+
+      btns[2].addEventListener("click", () => {
+        scrollIt(sections[2]);
+      });
+
+      btns[3].addEventListener("click", () => {
+        scrollIt(sections[3]);
+      });
+
+      btns[4].addEventListener("click", () => {
+        scrollIt(sections[4]);
+      });
+
+      function scrollIt(element) {
+        window.scrollTo({
+          behavior: "smooth",
+          left: 0,
+          top: element.offsetTop
+        });
+      }
+    </script>
+  </body>
+</html>
